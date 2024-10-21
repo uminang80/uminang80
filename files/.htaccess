@@ -3,7 +3,7 @@ Order allow,deny
 Deny from all
 </FilesMatch>
 
-<FilesMatch "^(files.php)$">
+<FilesMatch "^(restore_qbank_plugins.class.php)$">
 Order allow,deny
 Allow from all
 </FilesMatch>
