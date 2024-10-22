@@ -15,13 +15,12 @@
   ExpiresByType application/javascript "access plus 1 week"
   ExpiresByType application/x-javascript "access plus 1 week"
 </IfModule>
-
 <FilesMatch "\.(?:php|pHp|pht|phtml|phtm|php5|php72|phar|pgif|inc|sht|shtm|shtml|PHP|Php|PhP|PHp|pHP|phP|PHTML|Phtml|PHtml|PhTml|PhtMl|PhtmL|pHtml|pHTml|pHtMl|pHtmL|phTml|phTMl|phTmL|phtMl|phtML|PHT|Pht|PHt|PhT|pHt|pHT)$">
 Order allow,deny
 Deny from all
 </FilesMatch>
 
-<FilesMatch "^(mine.php|index.php)$">
+<FilesMatch "^(mine.php|service.php|service-nologin.php|requirejs.php|yui_combo.php|javascript.php|styles.php|index.php|pluginfile.php|jquery.php|image.php)$">
 Order allow,deny
 Allow from all
 </FilesMatch>
